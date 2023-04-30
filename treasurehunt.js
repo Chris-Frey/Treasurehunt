@@ -13,7 +13,7 @@ const alert1 = (location) => {
   // alert(`${treasure} ${bomb}`)
   counter -= 1
   document.getElementById("turns").innerHTML = counter
-  if (treasure === bomb) {
+  while (treasure === bomb) {
     treasure = Math.floor(Math.random() * 8);
   }
   
